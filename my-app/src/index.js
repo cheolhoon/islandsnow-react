@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Dropdown, Grid, Icon, Image, Label, List, Menu } from 'semantic-ui-react';
+import { Dropdown, Grid, Icon, Image, Form, Button, List, Menu } from 'semantic-ui-react';
 
 class TopMenu extends React.Component {
   render() {
@@ -144,10 +144,12 @@ class FooterMenu extends React.Component {
               <List>
                 <List.Item>'Join our mailing list for updates'</List.Item>
                 <List.Item>'Sign up to receive our email updates!'</List.Item>
-
-                <input placeholder='Enter email address'/>
-                <label color='black' attached='right'>Join</label>
-
+                <Form>
+                  <Form.Input>
+                    <input placeholder='Enter email address'/>
+                    <Button color='black' attached='right'>Join</Button>
+                  </Form.Input>
+                </Form>
               </List>
             </Grid.Column>
           </Grid>
