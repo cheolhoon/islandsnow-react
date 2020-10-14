@@ -8,31 +8,31 @@ class TopMenu extends React.Component {
   render() {
     return (
         <Menu borderless className="topmenu">
-          <container>
-            <Menu.Item fitted>
-              <Icon name="facebook f"/>
-            </Menu.Item>
-            <Menu.Item fitted>
-              <Icon name="twitter"/>
-            </Menu.Item>
-            <Menu.Item fitted>
-              <Icon name="pinterest"/>
-            </Menu.Item>
-            <Menu.Item fitted>
-              <Icon name="instagram"/>
-            </Menu.Item>
-            <Menu.Item fitted position="right">
-              <Icon name="home"/>
-            </Menu.Item>
-            <Menu.Item fitted>
-              <Icon name="Search"/>
-            </Menu.Item>
-            <Dropdown.Item item text="MY CART 0" icon="shop">
-              <Dropdown.Menu>
-                <Dropdown.Item>My cart is currently empty.</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown.Item>
-          </container>
+
+          <Menu.Item fitted>
+            <Icon name="facebook f"/>
+          </Menu.Item>
+          <Menu.Item fitted>
+            <Icon name="twitter"/>
+          </Menu.Item>
+          <Menu.Item fitted>
+            <Icon name="pinterest"/>
+          </Menu.Item>
+          <Menu.Item fitted>
+            <Icon name="instagram"/>
+          </Menu.Item>
+          <Menu.Item fitted position="right">
+            <Icon name="home"/>
+          </Menu.Item>
+          <Menu.Item fitted>
+            <Icon name="Search"/>
+          </Menu.Item>
+          <Dropdown.Item item text="MY CART 0" icon="shop">
+            <Dropdown.Menu>
+              <Dropdown.Item>My cart is currently empty.</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown.Item>
+
         </Menu>
     )
   }
@@ -52,53 +52,53 @@ class MiddleMenu extends React.Component {
   render() {
     return (
         <Menu borderless className="middlemenu">
-          <container>
-            <Grid centered style>
-              <Dropdown item text='MEN'>
-                <Dropdown.Menu>
-                  <Dropdown.Item>TANK TOPS</Dropdown.Item>
-                  <Dropdown.Item>SHIRTS</Dropdown.Item>
-                  <Dropdown.Item>LONG SLEEVE SHIRTS</Dropdown.Item>
-                  <Dropdown.Item>SWEATSHIRTS & JACKETS</Dropdown.Item>
-                  <Dropdown.Item>ALOHA SHIRTS</Dropdown.Item>
-                  <Dropdown.Item>BOTTOMS</Dropdown.Item>
-                  <Dropdown.Item>SLIPPERS</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Dropdown item text='WOMEN'>
-                <Dropdown.Menu>
-                  <Dropdown.Item>TANK TOPS</Dropdown.Item>
-                  <Dropdown.Item>SHIRTS</Dropdown.Item>
-                  <Dropdown.Item>LONG SLEEVE SHIRTS</Dropdown.Item>
-                  <Dropdown.Item>SWEATSHIRTS & JACKETS</Dropdown.Item>
-                  <Dropdown.Item>SLIPPERS</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Dropdown item text='KIDS'>
-                <Dropdown.Menu>
-                  <Dropdown.Item>SHIRTS</Dropdown.Item>
-                  <Dropdown.Item>ONESIES</Dropdown.Item>
-                  <Dropdown.Item>SWEATSHIRTS</Dropdown.Item>
-                  <Dropdown.Item>ACCESSORIES</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Dropdown item text='ACCESSORIES'>
-                <Dropdown.Menu>
-                  <Dropdown.Item>BAGS & WALLETS</Dropdown.Item>
-                  <Dropdown.Item>HATS</Dropdown.Item>
-                  <Dropdown.Item>STICKERS</Dropdown.Item>
-                  <Dropdown.Item>TOWELS</Dropdown.Item>
-                  <Dropdown.Item>HOME GOODS</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Dropdown item text='BRANDS'>
-                <Dropdown.Menu>
-                  <Dropdown.Item>TOO MANY</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Menu.Item>'SALE'</Menu.Item>
-            </Grid>
-          </container>
+
+          <Grid container centered>
+            <Dropdown item text='MEN'>
+              <Dropdown.Menu>
+                <Dropdown.Item>TANK TOPS</Dropdown.Item>
+                <Dropdown.Item>SHIRTS</Dropdown.Item>
+                <Dropdown.Item>LONG SLEEVE SHIRTS</Dropdown.Item>
+                <Dropdown.Item>SWEATSHIRTS & JACKETS</Dropdown.Item>
+                <Dropdown.Item>ALOHA SHIRTS</Dropdown.Item>
+                <Dropdown.Item>BOTTOMS</Dropdown.Item>
+                <Dropdown.Item>SLIPPERS</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown item text='WOMEN'>
+              <Dropdown.Menu>
+                <Dropdown.Item>TANK TOPS</Dropdown.Item>
+                <Dropdown.Item>SHIRTS</Dropdown.Item>
+                <Dropdown.Item>LONG SLEEVE SHIRTS</Dropdown.Item>
+                <Dropdown.Item>SWEATSHIRTS & JACKETS</Dropdown.Item>
+                <Dropdown.Item>SLIPPERS</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown item text='KIDS'>
+              <Dropdown.Menu>
+                <Dropdown.Item>SHIRTS</Dropdown.Item>
+                <Dropdown.Item>ONESIES</Dropdown.Item>
+                <Dropdown.Item>SWEATSHIRTS</Dropdown.Item>
+                <Dropdown.Item>ACCESSORIES</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown item text='ACCESSORIES'>
+              <Dropdown.Menu>
+                <Dropdown.Item>BAGS & WALLETS</Dropdown.Item>
+                <Dropdown.Item>HATS</Dropdown.Item>
+                <Dropdown.Item>STICKERS</Dropdown.Item>
+                <Dropdown.Item>TOWELS</Dropdown.Item>
+                <Dropdown.Item>HOME GOODS</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown item text='BRANDS'>
+              <Dropdown.Menu>
+                <Dropdown.Item>TOO MANY</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Menu.Item>SALE</Menu.Item>
+          </Grid>
+
         </Menu>
     )
   }
@@ -117,7 +117,7 @@ class FullWidthImage extends React.Component {
 class FooterMenu extends React.Component {
   render() {
     return (
-        <div className='footer-background'>
+        <Menu borderless className='footer-background'>
           <Grid container columns={3}>
             <Grid.Column>
               <List>
@@ -153,7 +153,7 @@ class FooterMenu extends React.Component {
               </List>
             </Grid.Column>
           </Grid>
-        </div>
+        </Menu>
     )
   }
 }
