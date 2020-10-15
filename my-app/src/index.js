@@ -25,14 +25,16 @@ class TopMenu extends React.Component {
             <Icon name="home"/>
           </Menu.Item>
           <Menu.Item fitted>
-            <Icon name="Search"/>
+            <Icon name="search"/>
           </Menu.Item>
-          <Dropdown.Item item text="MY CART 0" icon="shop">
+          <Menu.Item fitted>
+            <Icon name="user"/>
+          </Menu.Item>
+          <Dropdown item text="MY CART 0" icon="shop">
             <Dropdown.Menu>
               <Dropdown.Item>My cart is currently empty.</Dropdown.Item>
             </Dropdown.Menu>
-          </Dropdown.Item>
-
+          </Dropdown>
         </Menu>
     )
   }
@@ -118,41 +120,42 @@ class FooterMenu extends React.Component {
   render() {
     return (
         <Menu borderless className='footer-background'>
-          <Grid container columns={3}>
-            <Grid.Column>
-              <List>
-                <List.Item>ABOUT US</List.Item>
-                <List.Item>STORE LOCATIONS</List.Item>
-                <List.Item>EMPLOYMENT</List.Item>
-                <List.Item>SHIPPING & RETURNS</List.Item>
-                <List.Item>VIDEOS</List.Item>
-                <List.Item>TERMS & CONDITIONS</List.Item>
-                <List.Item>PRIVACY POLICY</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column>
-              <List>
-                <List.Item>MEN</List.Item>
-                <List.Item>WOMEN</List.Item>
-                <List.Item>KIDS</List.Item>
-                <List.Item>ACCESSORIES</List.Item>
-                <List.Item>BRANDS</List.Item>
-                <List.Item>SALE</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column>
-              <List>
-                <List.Item>'Join our mailing list for updates'</List.Item>
-                <List.Item>'Sign up to receive our email updates!'</List.Item>
-                <Form>
-                  <Form.Input>
-                    <input placeholder='Enter email address'/>
-                    <Button color='black' attached='right'>Join</Button>
-                  </Form.Input>
-                </Form>
-              </List>
-            </Grid.Column>
-          </Grid>
+
+            <Grid container columns={3}>
+              <Grid.Column>
+                <List>
+                  <List.Item>ABOUT US</List.Item>
+                  <List.Item>STORE LOCATIONS</List.Item>
+                  <List.Item>EMPLOYMENT</List.Item>
+                  <List.Item>SHIPPING & RETURNS</List.Item>
+                  <List.Item>VIDEOS</List.Item>
+                  <List.Item>TERMS & CONDITIONS</List.Item>
+                  <List.Item>PRIVACY POLICY</List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column>
+                <List>
+                  <List.Item>MEN</List.Item>
+                  <List.Item>WOMEN</List.Item>
+                  <List.Item>KIDS</List.Item>
+                  <List.Item>ACCESSORIES</List.Item>
+                  <List.Item>BRANDS</List.Item>
+                  <List.Item>SALE</List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column>
+                <List>
+                  <List.Item>'Join our mailing list for updates'</List.Item>
+                  <List.Item>'Sign up to receive our email updates!'</List.Item>
+                  <Form>
+                    <Form.Input>
+                      <input placeholder='Enter email address'/>
+                      <Button color='black' attached='right'>Join</Button>
+                    </Form.Input>
+                  </Form>
+                </List>
+              </Grid.Column>
+            </Grid>
         </Menu>
     )
   }

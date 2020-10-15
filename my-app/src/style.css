@@ -1,17 +1,18 @@
-#topmenu {
+.ui.borderless.topmenu.menu {
   background-color: #f5f5f5;
   box-shadow: none;
   border: none;
 }
 
-#middlemenu {
+.ui.borderless.middlemenu.menu {
   box-shadow: none;
   border: none;
 }
 
-#footer-background {
-  background-color: #292929;
+.footer-background {
+  bcakground-color: #292929;
   height: 200px;
-  margin-top: 50px;
+
+  border: none;
 }
 
